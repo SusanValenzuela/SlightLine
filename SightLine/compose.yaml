@@ -1,0 +1,9 @@
+services:
+  gateway:
+    build: ./gateway
+    ports:
+      - "127.0.0.1:8080:8080"
+  ai-service:
+    build: ./ai-service
+    ports:
+      - "127.0.0.1:8000:8000"
